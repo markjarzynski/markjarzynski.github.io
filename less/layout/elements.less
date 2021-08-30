@@ -1,0 +1,71 @@
+/**
+ *
+ * Layout.Less
+ *
+ * Copyright 2021 Mark Jarzynski <mark.jarzynski@gmail.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+ * THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ *
+ *
+ */
+
+@import "variables";
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.25em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1em;
+	margin: @gutter;
+}
+
+h1 { font-size: 2.0em; } h2 { font-size: 1.5em; } h3 { font-size: 1.25em } h4 { font-size: 1.125em; } h5 { font-size: 1em; } h6 { font-size: 0.8em; }
+
+b, strong {
+	font-weight: 800;
+}
+
+p {
+	padding: 0 @gutter;
+	margin: @gutter 0;
+}
+
+figure {
+	img, video, iframe, embed {
+		box-sizing: border-box;
+		max-width: 100%;
+		margin: 0 0 @gutter;
+		padding: @gutter;
+	}
+
+	figcaption {
+		padding: 0 @gutter @gutter;
+		margin: 0 0 @gutter;
+	}
+}
+
+img {
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+}
